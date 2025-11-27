@@ -43,7 +43,7 @@ export function Home() {
         <div>
             <span style={{ background: '#ffc107', color: '#000', padding: '5px 10px', borderRadius: '4px', fontWeight: 'bold', fontSize: '0.9rem' }}>OFERTA DO DIA</span>
             <h2 style={{ fontSize: '2.5rem', margin: '15px 0' }}>Semana da Tecnologia</h2>
-            <p style={{ fontSize: '1.2rem' }}>Produtos carregados via API REST</p>
+            
         </div>
         <div style={{ fontSize: '80px' }}>📦✈️</div>
       </div>
@@ -68,3 +68,4 @@ export function Home() {
   );
 
 }
+
