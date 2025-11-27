@@ -87,7 +87,7 @@ export function Cart() {
     .catch(erro => alert('Erro ao salvar: ' + erro));
   }}
 >
-  Finalizar Compra Real
+  Finalizar Compra 
 </Button>
             </div>
           </div>
@@ -95,4 +95,5 @@ export function Cart() {
       </main>
     </div>
   );
+
 }
