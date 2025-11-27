@@ -49,7 +49,7 @@ export function Home() {
       </div>
 
       <h2 style={{ fontSize: '1.5rem', color: '#333', borderLeft: '5px solid #2563eb', paddingLeft: '15px', marginBottom: '20px' }}>
-        Produtos em Destaque (Vindos do Servidor)
+        Produtos em Destaque 
       </h2>
 
       <div className="vitrine">
@@ -66,4 +66,5 @@ export function Home() {
       </div>
     </div>
   );
+
 }
