@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Loja AV2 - E-commerce React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para a disciplina de **Front-end Frameworks** (AV2).
+A aplicação simula um e-commerce completo com carrinho de compras, painel administrativo (Dashboard) e integração com API REST simulada.
 
-Currently, two official plugins are available:
+**Aluno(a):** Margareth
+**Curso:** Ciência da Computação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* TypeScript
+* Vite
+* React Router Dom (Navegação)
+* Context API (Gerenciamento de Estado Global)
+* JSON Server (Simulação de API REST)
+* CSS Modules (Estilização)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Pré-requisitos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Antes de começar, você precisa ter o **Node.js** instalado em sua máquina.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Como Rodar o Projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este projeto utiliza uma API simulada (`json-server`). Portanto, é necessário rodar dois terminais simultaneamente.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Passo 1: Instalar Dependências
+Abra o terminal na pasta do projeto e execute:
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Passo 2: Iniciar a API
+Abra o primeiro terminal e execute:
+npm run api
+Isso iniciará o servidor na porta 3000 (http://localhost:3000).
+
+Passo 3: Iniciar o Front-end
+Abra um segundo terminal e execute:
+npm run dev
+Acesse o projeto em seu navegador (geralmente http://localhost:5173).
+
+Funcionalidades Implementadas
+Vitrine de Produtos: Carregamento dinâmico de produtos via API (fetch).
+Carrinho de Compras: Adição e remoção de itens, cálculo de total (usando Context API).
+Dashboard Híbrido: Painel com visão de Cliente (pedidos) e Vendedor (gestão e exclusão).
+Autenticação: Simulação de Login com redirecionamento.
+Páginas Institucionais: Sobre e Contatos com formulários e layouts responsivos.
