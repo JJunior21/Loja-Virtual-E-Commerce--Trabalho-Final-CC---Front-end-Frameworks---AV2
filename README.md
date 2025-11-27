@@ -3,8 +3,8 @@
 Projeto desenvolvido para a disciplina de **Front-end Frameworks** (AV2).
 A aplicação simula um e-commerce completo com carrinho de compras, painel administrativo (Dashboard) e integração com API REST simulada.
 
-**Aluno(a):** Margareth
-**Curso:** Ciência da Computação
+Aluno:Juracy De Freitas Costa Junior
+Curso: Ciência da Computação
 
 ---
 
