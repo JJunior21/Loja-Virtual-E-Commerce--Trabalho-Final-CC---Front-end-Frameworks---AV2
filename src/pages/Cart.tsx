@@ -81,7 +81,7 @@ export function Cart() {
       body: JSON.stringify(pedido)
     })
     .then(() => {
-      alert('✅ Pedido salvo no banco de dados!');
+      alert('✅ Pedido salvo com sucesso!');
       window.location.href = '/'; // Volta para home
     })
     .catch(erro => alert('Erro ao salvar: ' + erro));
@@ -97,3 +97,4 @@ export function Cart() {
   );
 
 }
+
