@@ -1,0 +1,41 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Notebook Gamer Legion",
+      "price": 4500,
+      "image": "💻"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone Pro Max",
+      "price": 2800,
+      "image": "📱"
+    },
+    {
+      "id": 3,
+      "name": "Fone Noise Cancelling",
+      "price": 250,
+      "image": "🎧"
+    },
+    {
+      "id": 4,
+      "name": "Smartwatch Series 9",
+      "price": 900,
+      "image": "⌚"
+    },
+    {
+      "id": 5,
+      "name": "Monitor UltraWide",
+      "price": 1200,
+      "image": "🖥️"
+    },
+    {
+      "id": 6,
+      "name": "Teclado Mecânico",
+      "price": 350,
+      "image": "⌨️"
+    }
+  ],
+  "orders": []
+}

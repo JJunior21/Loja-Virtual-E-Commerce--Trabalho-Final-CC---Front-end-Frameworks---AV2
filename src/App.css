@@ -1,0 +1,86 @@
+/* Reseta margens para não ficar espaço branco nos cantos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho azul */
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.carrinho-btn {
+  background-color: white;
+  color: #2563eb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Grade de produtos */
+.vitrine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Cartão do produto (o quadradinho branco) */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efeito de subir quando passa o mouse */
+}
+
+.imagem-produto {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.preco {
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.comprar-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comprar-btn:hover {
+  background-color: #1d4ed8;
+}
