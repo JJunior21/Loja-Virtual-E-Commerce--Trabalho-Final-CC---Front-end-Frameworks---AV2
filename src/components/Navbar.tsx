@@ -12,7 +12,7 @@ export function Navbar() {
       </Link>
       
       <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-        {/* Links atualizados conforme seu pedido */}
+        {}
         <Link to="/" className="carrinho-btn">Produtos</Link>
         <Link to="/dashboard" className="carrinho-btn">Dashboard</Link>
         <Link to="/sobre" className="carrinho-btn">Sobre</Link>
@@ -25,4 +25,5 @@ export function Navbar() {
       </div>
     </nav>
   );
+
 }
